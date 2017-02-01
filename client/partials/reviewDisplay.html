@@ -1,0 +1,9 @@
+<h1 class="secondary-header">Recent Reviews</h1>
+
+<div class="reviewBox" ng-init="index()">
+  <div class="review-area" ng-repeat="review in reviews | orderBy:'created_at' :true ">
+    <p>Comment: {{review.text}}</p>
+    <p>Rating: {{review.rating}}</p>
+    <p>Posted By: {{review._user}} on: {{ created_at }}</p>
+  </div>
+</div>

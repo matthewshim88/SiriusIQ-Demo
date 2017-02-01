@@ -1,0 +1,249 @@
+*{
+  font-family:sans-serif;
+  padding: 0;
+  margin:0;
+}
+body {
+  background-image: url('/static/images/siriusiq.jpeg');
+}
+#banner{
+  border-bottom: none;
+  line-height: 1;
+  position: relative;
+  padding: 40px 15px;
+  background-color: #ce2575;
+  color: white;
+  border-radius: 5px;
+}
+
+.general-header{
+  background-color: rgba(0,164,219,1);
+  color:white;
+  padding-left: 15px;
+  border-radius: 5px;
+  line-height: 1;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.secondary-header{
+  background-color: rgba(156, 203, 59, 100);
+  padding-left: 15px;
+  border-radius: 5px;
+  line-height: 1;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.clear-background{
+  background-color:white;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* Product Display */
+  #productBox{
+    width:200px;
+    display:inline-block;
+    background-color:orange;
+    margin-left:20px;s
+    padding-bottom: 30px;
+  }
+
+  #addField{
+    margin-left:20px;
+  }
+
+  .productDisplay{
+    margin: 20px;
+    width:750px;
+    display:inline-block;
+    vertical-align: top;
+  }
+
+  .bold{
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+
+  .detailProduct{
+    margin-left: auto;
+    margin-right:auto;
+    background-color: beige;
+    border-radius:5px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .product{
+    display: inline-block;
+    margin-left:30px;
+    background-color: greenyellow;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  img{
+    vertical-align: true;
+    width:150px;
+    height:150px;
+    margin: 10px;
+  }
+
+  /* Review Page*/
+  .review-area{
+    margin-bottom: 10px;
+    background-color: lightgray;
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+    padding-left: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+/* Categories */
+ .category-link, .brand-link{
+   font-size: 2.0em;
+   background-color:beige;
+   margin-left: auto;
+   margin-right: auto;
+   border-radius: 5px;
+   margin-bottom: 10px;
+   text-align: center;
+ }
+
+/*Footer Component*/
+  #footer {
+    font-size:1.2em;
+    width: auto;
+    height: 30px;
+    text-align: center;
+    padding-top: 5px;
+    color: white;
+    background-color: #ce2575;
+    border-radius: 5px;
+  }
+  .foot{
+     color: inherit;
+   }
+
+/* Form Styling */
+.form-style-6{
+    font: 95% Arial, Helvetica, sans-serif;
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 16px;
+    background: #F7F7F7;
+}
+.form-style-6 h1{
+    background: #43D1AF;
+    padding: 20px 0;
+    font-size: 140%;
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+    margin: -16px -16px 16px -16px;
+}
+.form-style-6 input[type="text"],
+.form-style-6 input[type="date"],
+.form-style-6 input[type="datetime"],
+.form-style-6 input[type="email"],
+.form-style-6 input[type="number"],
+.form-style-6 input[type="search"],
+.form-style-6 input[type="time"],
+.form-style-6 input[type="url"],
+.form-style-6 textarea,
+.form-style-6 select
+{
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    background: #fff;
+    margin-bottom: 4%;
+    border: 1px solid #ccc;
+    padding: 3%;
+    color: #555;
+    font: 95% Arial, Helvetica, sans-serif;
+}
+.form-style-6 input[type="text"]:focus,
+.form-style-6 input[type="date"]:focus,
+.form-style-6 input[type="datetime"]:focus,
+.form-style-6 input[type="email"]:focus,
+.form-style-6 input[type="number"]:focus,
+.form-style-6 input[type="search"]:focus,
+.form-style-6 input[type="time"]:focus,
+.form-style-6 input[type="url"]:focus,
+.form-style-6 textarea:focus,
+.form-style-6 select:focus
+{
+    box-shadow: 0 0 5px #43D1AF;
+    padding: 3%;
+    border: 1px solid #43D1AF;
+}
+
+.form-style-6 input[type="submit"],
+.form-style-6 input[type="button"]{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    padding: 3%;
+    background: #43D1AF;
+    border-bottom: 2px solid #30C29E;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    color: #fff;
+}
+.form-style-6 input[type="submit"]:hover,
+.form-style-6 input[type="button"]:hover{
+    background: #2EBC99;
+}
+
+/* For the Star Rating */
+
+  .rating {
+    overflow: hidden;
+    vertical-align: bottom;
+    display: inline-block;
+    width: auto;
+    height: 30px;
+  }
+
+  .rating > input {
+    opacity: 0;
+    margin-right: -100%;
+  }
+
+  .rating > label {
+    position: relative;
+    display: block;
+    float: right;
+    background: url('../images/star-off-big.png');
+    background-size: 30px 30px;
+  }
+
+  .rating > label:before {
+    display: block;
+    opacity: 0;
+    content: '';
+    width: 30px;
+    height: 30px;
+    background: url('../images/star-on-big.png');
+    background-size: 30px 30px;
+    transition: opacity 0.2s linear;
+  }
+
+  .rating > label:hover:before,  .rating > label:hover ~ label:before,  .rating:not(:hover) > :checked ~ label:before { opacity: 1; }

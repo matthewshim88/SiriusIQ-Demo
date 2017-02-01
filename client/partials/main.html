@@ -1,0 +1,15 @@
+
+<h1 class="general-header">Featured Products</h1>
+  <div class="container" ng-controller="productController">    <!-- TODO: Decide on Bootstrap Grid !-->
+    <div class="productDisplay center-block" ng-init="limit = 6">
+      <div class="product" ng-repeat="product in products | orderBy: 'created_at' : true | limitTo: limit as results">
+          <div class="imageholder">
+            <a href="#/product/{{product._id}}"><img ng-src="{{product.imgUrl}}"></a>
+          </div>
+          <p class="bold">{{product.title}}</p>
+          <p>Price: ${{product.price}}</p>
+      </div>
+      <button class="btn btn-primary center-block" ng-hide="results.length === products.length" ng-click="limit = limit +8">Show More Products</button>
+    </div>
+  </div>
+</div>

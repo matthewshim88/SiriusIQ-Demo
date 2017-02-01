@@ -1,0 +1,17 @@
+
+<div class="detailProduct">
+  <h1>{{detailProduct.title}}</h1>
+  <img src="{{detailProduct.imgUrl}}">
+  <p>Description: {{detailProduct.desc}}</p>
+  <p>Brand: {{detailProduct.brand}}</p>
+  <p>Price: ${{detailProduct.price}}</p>
+  <p>In Stock: {{detailProduct.stock}}</p>
+  <p>Category: {{detailProduct.category}}</p>
+  <div ng-controller="reviewController">
+    <a class="btn btn-primary" href="#/newReview/{{detailProduct._id}}">Add a Review</a>
+    <button class="btn btn-primary" ng-click="showReviews = !showReviews; getReviewOneProduct()">Show Reviews</button>
+    <div class="reviewDisplay" ng-show="showReviews">
+      <p ng-repeat="review in reviews | orderBy:'created_at' : true">{{review.text}}</p>
+    </div>
+  </div>
+</div>

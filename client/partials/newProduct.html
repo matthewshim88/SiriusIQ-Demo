@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="form-style-6">
+    <h1>Add a New Product</h1>
+      <form ng-submit="add()">
+          <p>Name: <input class="input-group" type='text' ng-model="product.title" required=true></p>
+          <p>Price($): <input class="input-group" type='number' ng-model="product.price" required=true></p>
+          <p>Quantity: <input class="input-group" type='number' ng-model="product.stock" required=true minimum=0></p>
+          <p>Brand: <input class="input-group" type='text' ng-model="product.brand"></p>
+          <p>Category: <input class="input-group" type='text' ng-model="product.category" required=true></p>
+          <p>Image (URL) : <input class="input-group" type='text' ng-model="product.imgUrl" required=true></p>
+          <p>Description: <textarea rows="6" cols="30" type="text" ng-model="product.desc" class="input-group" required=true></textarea></p>
+          <input type="submit" value="Add" class="btn btn-primary">
+      </form>
+    </div>
+  </div>
+</div>

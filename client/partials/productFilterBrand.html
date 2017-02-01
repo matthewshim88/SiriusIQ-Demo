@@ -1,0 +1,11 @@
+  <h2 class="general-header"> Brand: {{ brand.brand }} </h2>
+  <div id="productDisplay" ng-init="limit = 5">
+    <div class="product" ng-repeat="product in products | orderBy: 'created_at' : true | limitTo: limit as results">
+        <div class="imageholder">
+          <a href="#/product/{{product._id}}"><img ng-src="{{product.imgUrl}}"></a>
+        </div>
+        <p>{{product.title}}</p>
+        <p>Price: ${{product.price}}</p>
+        <p>In Stock: {{product.stock}}</p>
+    </div>
+  </div>

@@ -1,0 +1,37 @@
+<h2 class="secondary-header">Add a new Order: </h2>
+<div class="clear-background">
+  <form ng-submit = "add()">
+    <p>Customer:
+      <select ng-model="customer">
+        <option  value="{{customer._id}}" ng-repeat="customer in customers">{{customer.name}}</option>
+      </select>
+    </p>
+    <p>Order:
+      <select ng-change="prodQty(product)" ng-model="product"
+      ng-options="product as product.title for product in products">
+      </select>
+      <select ng-model="product.stock">
+        <option ng-repeat="i in quantity | range">{{i}}</option>
+      </select>
+    </p>
+    <input class="btn btn-primary" type="submit" value="Order">
+  </form>
+  <div id="orderBox">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Customer Name</th>
+          <th>Product</th>
+          <th>Quantity</th>
+          <th>Date</th>
+        </tr>
+      </thead>
+        <tr ng-repeat="order in orders">
+          <th>{{order._customer.name}}</th>
+          <th>{{order._product.title}}</th>
+          <th>{{order.quantity}}</th>
+          <th>{{order.createdAt | date: 'short'}}</th>
+        </tr>
+    </table>
+  </div>
+</div>
