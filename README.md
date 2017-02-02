@@ -1,5 +1,6 @@
 # SiriusIQ-Demo
 *Demo built for [SiriusIQ Mobile](http://www.siriusiqmobile.com)*
+##Link to Demo (In Work) [Demo](http://54.202.62.225)##
 
 ## Installation ##
 
@@ -33,7 +34,7 @@ node server.js  // nodemon server.js also fine
 - Built and deployed in 2 days
 - Learned how to resolve dependency version issues (i.e angular 1.6.1 from 1.5.3)
 
-## Lessons Learned: ##]
+## Lessons Learned: ##
 - I'm not convinced MongoDB (or NoSQL in general) is sufficient for an E-commerce app,
 I'm sure it could be done but there's definitely limitations.
 - Dependency Version: things change, you can inadverdently install a module which requires others
